@@ -28,5 +28,27 @@
 <section id="main-container">
 
   <header id="header">
-    <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+    <div class="container">
+      <div class="grid-row">
+        <div class="grid-item item-s-1">
+          <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+        </div>
+        <div class="grid-item item-s-9">
+          <ul class="main-menu grid-row">
+            <li class="grid-item item-s-2"><a href="#">About</a></li>
+            <li class="grid-item item-s-2"><a href="#">Shop</a></li>
+            <li class="grid-item item-s-2"><a href="#">Lookbooks</a></li>
+            <li class="grid-item item-s-2"><a href="#">News</a></li>
+            <li class="grid-item item-s-2"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="grid-item item-s-2">
+          <ul class="social-menu grid-row">
+            <li class="grid-item item-s-1"><a href="#">Lookbooks</a></li>
+            <li class="grid-item item-s-1"><a href="#">News</a></li>
+            <li class="grid-item item-s-1"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </header>
