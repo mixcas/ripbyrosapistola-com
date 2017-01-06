@@ -52,7 +52,9 @@ if( $latest_posts->have_posts() ) {
 
         <article <?php post_class('grid-item item-s-4'); ?> id="post-<?php the_ID(); ?>">
 
-          <div class="background-image" style="background-image: url(<?php echo the_post_thumbnail_url('background-image-grid'); ?>);"></div>
+          <a href="<?php the_permalink() ?>">
+            <div class="background-image" style="background-image: url(<?php echo the_post_thumbnail_url('background-image-grid'); ?>);"></div>
+          </a>
           <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 
         </article>
