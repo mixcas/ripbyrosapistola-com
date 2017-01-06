@@ -35,11 +35,11 @@
         </div>
         <div class="grid-item item-s-9">
           <ul class="main-menu grid-row">
-            <li class="grid-item item-s-2"><a href="#">About</a></li>
-            <li class="grid-item item-s-2"><a href="#">Shop</a></li>
+            <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></li>
+            <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></li>
             <li class="grid-item item-s-2"><a href="#">Lookbooks</a></li>
-            <li class="grid-item item-s-2"><a href="#">News</a></li>
-            <li class="grid-item item-s-2"><a href="#">Contact</a></li>
+            <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'news' ) ); ?>">News</a></li>
+            <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>">Contact</a></li>
           </ul>
         </div>
         <div class="grid-item item-s-2">
