@@ -18,17 +18,6 @@ if( have_posts() ) {
         </div>
         <div class="desktop-only">
           <div class="background-image" style="<?php echo background_image_set_css( get_post_thumbnail_id()); ?>"></div>
-          <div class="container">
-            <div class="grid-column justify-end title-container">
-              <div class="grid-item item-s-1 margin-bottom-basic">
-                <div class="grid-row justify-center">
-                  <div class="grid-item item-s-8 text-align-center">
-                    <?php the_title(); ?>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 

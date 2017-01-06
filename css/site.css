@@ -755,6 +755,7 @@ p a {
 html {
   background-color: #fff;
   color: #000;
+  font-family: Georgia, serif;
 }
 img {
   max-width: 100%;
@@ -765,6 +766,15 @@ img {
 }
 .desktop-only {
   display: none !important;
+}
+.bg-black {
+  background: #000;
+}
+.bg-black-alpha {
+  background: rgba(0,0,0,0.7);
+}
+.white-text {
+  color: #fff;
 }
 .container {
   width: 96%;
