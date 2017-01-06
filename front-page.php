@@ -13,7 +13,7 @@ if( $latest_posts->have_posts() ) {
 ?>
   <section id="posts">
 
-    <article class="featured-post">
+    <article class="featured-post margin-bottom-basic">
       <div class="image-header">
         <div class="mobile-only">
           <?php the_post_thumbnail('background-image'); ?>
@@ -37,7 +37,7 @@ if( $latest_posts->have_posts() ) {
       </div>
     </article>
 
-    <div class="container">
+    <div class="container posts-grid">
 <?php
   $index = -1;
   while( $latest_posts->have_posts() ) {
@@ -47,18 +47,18 @@ if( $latest_posts->have_posts() ) {
     <?php
     if ($index % 3 === 0) { // OPEN ROW
     ?>
-      <div class="grid-row posts-grid">
+      <div class="grid-row">
       <?php
       }
       ?>
 
         <article <?php post_class('grid-item item-s-4'); ?> id="post-<?php the_ID(); ?>">
-
-          <a href="<?php the_permalink() ?>">
-            <div class="background-image" style="background-image: url(<?php echo the_post_thumbnail_url('background-image-grid'); ?>);"></div>
-          </a>
-          <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-
+          <div class="text-align-center">
+            <a href="<?php the_permalink() ?>">
+              <div class="background-image" style="background-image: url(<?php echo the_post_thumbnail_url('background-image-grid'); ?>);"></div>
+            </a>
+            <h2 class="padding-top-tiny padding-bottom-tiny font-size-h3 bg-black white-text rotated-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+          </div>
         </article>
 
       <?php
