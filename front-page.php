@@ -5,20 +5,13 @@ get_header();
 
 <main id="main-content">
 <?php
-if( have_posts() ) {
-  $index = -2;
+$latest_posts =  new WP_Query( array(
+  'post_per_page' => 7,
+) );
+if( $latest_posts->have_posts() ) {
+  $latest_posts->the_post();
 ?>
   <section id="posts">
-
-<?php
-  while( have_posts() ) {
-    the_post();
-    $index++;
-?>
-
-    <?php // FEATURED POST
-    if ($index === -1) {
-    ?>
 
     <article class="featured-post">
       <div class="image-header">
@@ -42,14 +35,17 @@ if( have_posts() ) {
       </div>
     </article>
 
-    <?php
-    } else {
-    ?>
     <div class="container">
-      <?php
-      if ($index % 3 === 0) { // OPEN ROW
-      ?>
-        <div class="grid-row">
+<?php
+  $index = -1;
+  while( $latest_posts->have_posts() ) {
+    $latest_posts->the_post();
+    $index++;
+?>
+    <?php
+    if ($index % 3 === 0) { // OPEN ROW
+    ?>
+      <div class="grid-row">
       <?php
       }
       ?>
@@ -61,18 +57,13 @@ if( have_posts() ) {
         </article>
 
       <?php
-      if ($index % 3 === 2 || have_posts() === false) { // CLOSE ROW
+      if ($index % 3 === 2 || $latest_posts->have_posts() === false) { // CLOSE ROW
       ?>
-        </div>
+      </div>
       <?php
       }
       ?>
 
-
-
-    <?php
-    }
-    ?>
 
 <?php
   }
@@ -86,8 +77,6 @@ if( have_posts() ) {
       </div>
     </div>
   </section>
-
-  <?php get_template_part('partials/pagination'); ?>
 
 </main>
 
