@@ -1039,6 +1039,12 @@ h3,
 .font-size-h3 {
   font-size: 16px;
 }
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-position: top center;
+  background-size: auto 100%;
+}
 .image-header {
   position: relative;
   height: 80vh;
@@ -1047,13 +1053,12 @@ h3,
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-position: top center;
-  background-size: auto 100%;
 }
 .image-header .title-container {
   height: 80vh;
+}
+.posts-grid .background-image {
+  height: 274px;
 }
 @media screen and (min-width: 720px) {
   .margin-top-micro {
@@ -1589,15 +1594,5 @@ h3,
 @media screen and (min-width: 1366px) {
   .container {
     width: 1300px;
-  }
-}
-@media screen and (min-width: 1680px) {
-  .container {
-    width: 1600px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .container {
-    width: 1800px;
   }
 }

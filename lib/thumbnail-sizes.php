@@ -12,4 +12,6 @@ if( function_exists( 'add_image_size' ) ) {
 
   add_image_size( 'background-image-1x', 1200, 800, false );
   add_image_size( 'background-image-2x', 2400, 1600, false );
+
+  add_image_size( 'background-image-grid', 410 , 274, false );
 }
