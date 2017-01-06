@@ -1,0 +1,10 @@
+--webkit-image-set(
+url(http://localhost/rip/wp-content/uploads/2016/09/TOMASA-12.png) 1000w,
+url(http://localhost/rip/wp-content/uploads/2016/09/TOMASA-12-200x300.png) 200w,
+url(http://localhost/rip/wp-content/uploads/2016/09/TOMASA-12-768x1152.png) 768w,
+url(http://localhost/rip/wp-content/uploads/2016/09/TOMASA-12-683x1024.png) 683w,
+url(http://localhost/rip/wp-content/uploads/2016/09/TOMASA-12-100x150.png) 100w
+)
+
+
+-webkit-image-set(url(assets/test.png) 1x,                url(assets/test-hires.png) 2x)
