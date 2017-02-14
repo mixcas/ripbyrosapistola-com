@@ -1,5 +1,5 @@
-  <footer id="footer" class="container">
-    <div class="grid-row">
+  <footer id="footer" class="bg-black white-text margin-top-basic">
+    <div class="grid-row container margin-top-basic margin-bottom-basic">
       <div class="grid-item item-s-4">
         <h4>Find us</h4>
         <p>Lisboa #48, Colonia Juárez, México D.F.</p>
