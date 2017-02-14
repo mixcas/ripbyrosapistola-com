@@ -6,10 +6,10 @@
   <title><?php wp_title('|',true,'right'); bloginfo('name'); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <?php
-    get_template_part('partials/globie');
-    get_template_part('partials/seo');
-  ?>
+<?php
+get_template_part('partials/globie');
+get_template_part('partials/seo');
+?>
 
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
   <link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/dist/favicon.png">
@@ -28,10 +28,11 @@
 <section id="main-container" class="grid-column justify-between">
 
   <header id="header">
-    <div class="container">
+    <div class="container desktop-only desktop-header">
       <div class="grid-row">
-        <div class="grid-item item-s-1">
-          <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+        <div class="grid-item item-s-1 logo">
+          <h1 class="u-hidden"><?php bloginfo('name'); ?></h1>
+          <a href="<?php echo home_url(); ?>"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?></a>
         </div>
         <div class="grid-item item-s-9">
           <ul class="main-menu grid-row">
@@ -44,11 +45,38 @@
         </div>
         <div class="grid-item item-s-2">
           <ul class="social-menu grid-row">
-            <li class="grid-item item-s-1"><a href="#">Lookbooks</a></li>
-            <li class="grid-item item-s-1"><a href="#">News</a></li>
-            <li class="grid-item item-s-1"><a href="#">Contact</a></li>
+            <li class="grid-item item-s-1"><a href="#">Facebook</a></li>
+            <li class="grid-item item-s-1"><a href="#">Twitter</a></li>
+            <li class="grid-item item-s-1"><a href="#">Instagram</a></li>
           </ul>
         </div>
+      </div>
+    </div>
+    <div class="container mobile-only mobile-header">
+      <div class="grid-row">
+        <div class="grid-item item-s-12 text-align-center">
+          <a href="#" class="menu-toggle logo"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?></a>
+        </div>
+
+        <div id="mobile-menu" class="white-text bg-black">
+          <ul class="">
+            <li class=""><a href="<?php echo home_url(); ?>">Home</a></li>
+            <li class=""><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></li>
+            <li class=""><a href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></li>
+            <li class=""><a href="#">Lookbooks</a></li>
+            <li class=""><a href="<?php echo get_permalink( get_page_by_path( 'news' ) ); ?>">News</a></li>
+            <li class=""><a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>">Contact</a></li>
+          </ul>
+          <div class="">
+            <ul class="social-menu">
+              <li class=""><a href="#">Facebook</a></li>
+              <li class=""><a href="#">Twitter</a></li>
+              <li class=""><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+          <a href="#" class="menu-toggle">X</a>
+        </div>
+
       </div>
     </div>
   </header>

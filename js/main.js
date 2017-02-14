@@ -11,7 +11,7 @@ Site = {
     });
 
     $(document).ready(function () {
-
+      Site.Menu.init();
     });
 
   },
@@ -28,6 +28,28 @@ Site = {
       string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
       $(this).html(string);
     });
+  },
+};
+
+Site.Menu = {
+  init: function() {
+    var _this = this;
+
+    _this.$body = $('body');
+    _this.$menu = $('#mobile-menu');
+    _this.$toggle = $('.menu-toggle');
+
+    _this.bind();
+  },
+
+  bind: function() {
+    var _this = this;
+
+   _this.$toggle.on('click', function(e) {
+    e.preventDefault();
+    _this.$menu.toggleClass('active');
+    _this.$body.toggleClass('mobile-menu');
+   });
   },
 };
 

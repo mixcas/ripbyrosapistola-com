@@ -1090,13 +1090,38 @@ h3,
 .font-size-h3 {
   font-size: 16px;
 }
+body.mobile-menu {
+  overflow: hidden;
+  height: 100vh;
+}
 #main-container {
   min-height: 100vh;
+}
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+#mobile-menu.active {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 #main-content {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+}
+.logo svg {
+  width: auto;
+  height: 50px;
 }
 .background-image {
   width: 100%;
@@ -1104,20 +1129,11 @@ h3,
   background-position: top center;
   background-size: auto 100%;
 }
-.image-header {
-  position: relative;
-  height: 80vh;
-}
-.image-header .background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.image-header .title-container {
-  height: 80vh;
-}
 .posts-grid .background-image {
   height: 274px;
+}
+img {
+  max-width: 100%;
 }
 @media screen and (min-width: 720px) {
   .margin-micro {
@@ -1715,6 +1731,22 @@ h3,
   }
   .desktop-only {
     display: initial !important;
+  }
+  .logo svg {
+    width: 100%;
+    height: auto;
+  }
+  .image-header {
+    position: relative;
+    height: 80vh;
+  }
+  .image-header .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .image-header .title-container {
+    height: 80vh;
   }
 }
 @media screen and (min-width: 1280px) {
