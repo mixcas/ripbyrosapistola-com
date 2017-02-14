@@ -24,11 +24,11 @@ if( have_posts() ) {
       <div class="container">
         <div class="grid-row">
           <div class="grid-item item-s-10">
-            <h1><?php the_title(); ?></h1>
+            <h1 class="big-text"><?php the_title(); ?></h1>
           </div>
         </div>
 
-        <div class="grid-row">
+        <div class="grid-row margin-bottom-small">
           <div class="grid-item item-s-3">
             Facebook
           </div>
@@ -38,7 +38,7 @@ if( have_posts() ) {
         </div>
 
         <div class="grid-row">
-          <div class="grid-item item-s-12">
+          <div class="grid-item item-s-12 content-copy">
 
           <?php the_content(); ?>
           <p><b><?php the_date('F d, Y') ?></b></p>

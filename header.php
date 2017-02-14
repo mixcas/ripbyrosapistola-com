@@ -27,14 +27,14 @@ get_template_part('partials/seo');
 
 <section id="main-container" class="grid-column justify-between">
 
-  <header id="header">
-    <div class="container desktop-only desktop-header">
-      <div class="grid-row">
-        <div class="grid-item item-s-1 logo">
+  <header id="header" class="bg-black white-text">
+    <div class="desktop-only desktop-header">
+      <div class="grid-row container">
+        <div class="grid-item item-s-2 logo">
           <h1 class="u-hidden"><?php bloginfo('name'); ?></h1>
           <a href="<?php echo home_url(); ?>"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?></a>
         </div>
-        <div class="grid-item item-s-9">
+        <div class="grid-item item-s-8">
           <ul class="main-menu grid-row">
             <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></li>
             <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></li>

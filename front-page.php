@@ -26,7 +26,7 @@ if( $latest_posts->have_posts() ) {
             <div class="grid-column justify-end title-container">
               <div class="grid-item item-s-1 margin-bottom-basic">
                 <div class="grid-row justify-center">
-                  <div class="grid-item item-s-6 text-align-center padding-top-small padding-bottom-small font-size-h2 font-italic bg-black-alpha white-text">
+                  <div class="grid-item item-s-6 text-align-center padding-top-small padding-bottom-small font-size-h1 font-italic bg-black-alpha white-text">
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                   </div>
                 </div>
@@ -47,17 +47,17 @@ if( $latest_posts->have_posts() ) {
     <?php
     if ($index % 3 === 0) { // OPEN ROW
     ?>
-      <div class="grid-row">
+      <div class="grid-row margin-bottom-small">
       <?php
       }
       ?>
 
         <article <?php post_class('grid-item item-s-4'); ?> id="post-<?php the_ID(); ?>">
-          <div class="text-align-center">
+          <div class="grid-post text-align-center">
             <a href="<?php the_permalink() ?>">
               <div class="background-image" style="background-image: url(<?php echo the_post_thumbnail_url('background-image-grid'); ?>);"></div>
             </a>
-            <h2 class="padding-top-tiny padding-bottom-tiny font-size-h3 bg-black white-text rotated-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+            <h2 class="grid-title padding-top-tiny padding-bottom-tiny font-size-h1 white-text"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
           </div>
         </article>
 
