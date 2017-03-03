@@ -13,6 +13,17 @@ function url_get_contents($Url) {
   return $output;
 }
 
+function get_category_link_by_slug($slug) {
+  $category = get_category_by_slug($slug);
+
+  if(!empty($category)) {
+    $link = get_category_link($category->term_id);
+
+    return $link;
+  }
+
+}
+
 // get ID of page by slug
 function get_id_by_slug($page_slug) {
 	$page = get_page_by_path($page_slug);

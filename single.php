@@ -56,9 +56,8 @@ if( have_posts() ) {
         </div>
 
 
-        </article>
       </div>
-    </div>
+    </article>
 
 <?php
   }

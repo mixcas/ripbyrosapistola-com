@@ -39,7 +39,7 @@ get_template_part('partials/seo');
           <ul class="main-menu grid-row">
             <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></li>
             <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></li>
-            <li class="grid-item item-s-2"><a href="#">Lookbooks</a></li>
+            <li class="grid-item item-s-2"><a href="<?php echo get_category_link_by_slug('lookbook'); ?>">Lookbooks</a></li>
             <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'news' ) ); ?>">News</a></li>
             <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>">Contact</a></li>
           </ul>
