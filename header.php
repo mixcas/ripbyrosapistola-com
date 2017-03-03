@@ -21,6 +21,7 @@ get_template_part('partials/seo');
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   <?php } ?>
   <?php wp_head(); ?>
+  <?php debug_page_request(); ?>
 </head>
 <body <?php body_class(); ?>>
 <!--[if lt IE 9]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->

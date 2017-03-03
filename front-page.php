@@ -6,7 +6,7 @@ get_header();
 <main id="main-content">
 <?php
 $latest_posts =  new WP_Query( array(
-  'post_per_page' => 7,
+  'posts_per_page' => 7,
 ) );
 if( $latest_posts->have_posts() ) {
   $latest_posts->the_post();

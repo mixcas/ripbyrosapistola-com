@@ -7,11 +7,11 @@
         <p>Tel: +52 (55) 5264 8248</p>
 
         <p>Hours<br/>
-        Mon- Fri 12:00 a 8:00<br/>
-        Sat 12:00 a 5:00 pm
+        Thur - Fri 1:00pm a 8:00pm<br/>
+        Sat - Sun 1:00pm a 5:00pm
         </p>
 
-        <p>rip@ripbyrosapistola.com</p>
+        <p>rosapistola@gmail.com</p>
       </div>
       <div class="grid-item item-s-4">
       </div>
