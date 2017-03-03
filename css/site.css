@@ -1260,6 +1260,10 @@ body.mobile-menu {
 img {
   max-width: 100%;
 }
+.woocommerce input {
+  line-height: 16px;
+  padding: 7px;
+}
 @media screen and (min-width: 720px) {
   .margin-micro {
     margin: 7px;

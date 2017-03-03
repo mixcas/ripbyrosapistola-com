@@ -33,9 +33,9 @@ get_template_part('partials/seo');
       <div class="grid-row container">
         <div class="grid-item item-s-2 logo">
           <h1 class="u-hidden"><?php bloginfo('name'); ?></h1>
-          <a href="<?php echo home_url(); ?>"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?></a>
+          <a class="u-inline-block margin-top-tiny margin-bottom-tiny" href="<?php echo home_url(); ?>"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?></a>
         </div>
-        <div class="grid-item item-s-8">
+        <div class="grid-item item-s-7">
           <ul class="main-menu grid-row">
             <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></li>
             <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></li>
@@ -44,11 +44,16 @@ get_template_part('partials/seo');
             <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>">Contact</a></li>
           </ul>
         </div>
-        <div class="grid-item item-s-2">
+        <div class="grid-item item-s-3">
           <ul class="social-menu grid-row">
-            <li class="grid-item item-s-1"><a href="#">Facebook</a></li>
-            <li class="grid-item item-s-1"><a href="#">Twitter</a></li>
-            <li class="grid-item item-s-1"><a href="#">Instagram</a></li>
+<?php
+$facebook = IGV_get_option('_igv_site_options', '_igv_socialmedia_facebook');
+$twitter = IGV_get_option('_igv_site_options', '_igv_google_socialmedia_twitter');
+$instagram = IGV_get_option('_igv_site_options', '_igv_google_socialmedia_instagram');
+?>
+  <li class="grid-item item-s-1"><a href="#"></a></li>
+            <li class="grid-item item-s-1"><a href="#"></a></li>
+            <li class="grid-item item-s-1"><a href="#"></a></li>
           </ul>
         </div>
       </div>
