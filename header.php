@@ -12,7 +12,7 @@ get_template_part('partials/seo');
 ?>
 
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
-  <link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/dist/favicon.png">
+  <link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/dist/favicon.ico">
   <link rel="shortcut" href="<?php bloginfo('stylesheet_directory'); ?>/img/dist/favicon.ico">
   <link rel="apple-touch-icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/dist/favicon-touch.png">
   <link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('stylesheet_directory'); ?>/img/dist/favicon.png">
@@ -35,27 +35,11 @@ get_template_part('partials/seo');
           <h1 class="u-hidden"><?php bloginfo('name'); ?></h1>
           <a class="u-inline-block margin-top-tiny margin-bottom-tiny" href="<?php echo home_url(); ?>"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?></a>
         </div>
-        <div class="grid-item item-s-7">
-          <ul class="main-menu grid-row">
-            <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></li>
-            <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></li>
-            <li class="grid-item item-s-2"><a href="<?php echo get_category_link_by_slug('lookbook'); ?>">Lookbooks</a></li>
-            <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'news' ) ); ?>">News</a></li>
-            <li class="grid-item item-s-2"><a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>">Contact</a></li>
-          </ul>
-        </div>
-        <div class="grid-item item-s-3">
-          <ul class="social-menu grid-row">
-<?php
-$facebook = IGV_get_option('_igv_site_options', '_igv_socialmedia_facebook');
-$twitter = IGV_get_option('_igv_site_options', '_igv_google_socialmedia_twitter');
-$instagram = IGV_get_option('_igv_site_options', '_igv_google_socialmedia_instagram');
-?>
-  <li class="grid-item item-s-1"><a href="#"></a></li>
-            <li class="grid-item item-s-1"><a href="#"></a></li>
-            <li class="grid-item item-s-1"><a href="#"></a></li>
-          </ul>
-        </div>
+        <div class="grid-item item-s-2 padding-top-small padding-bottom-tiny"><a class="shop-link padding-tiny" href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></div>
+        <div class="grid-item item-s-2 padding-top-small padding-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'news' ) ); ?>">News</a></div>
+        <div class="grid-item item-s-2 padding-top-small padding-bottom-tiny"><a href="<?php echo get_category_link_by_slug('lookbook'); ?>">Lookbooks</a></div>
+        <div class="grid-item item-s-2 padding-top-small padding-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></div>
+        <div class="grid-item item-s-2 padding-top-small padding-bottom-tiny"><?php get_template_part('partials/cart'); ?></div>
       </div>
     </div>
     <div class="container mobile-only mobile-header">
@@ -67,8 +51,8 @@ $instagram = IGV_get_option('_igv_site_options', '_igv_google_socialmedia_instag
         <div id="mobile-menu" class="white-text bg-black">
           <ul class="">
             <li class=""><a href="<?php echo home_url(); ?>">Home</a></li>
-            <li class=""><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></li>
             <li class=""><a href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></li>
+            <li class=""><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></li>
             <li class=""><a href="#">Lookbooks</a></li>
             <li class=""><a href="<?php echo get_permalink( get_page_by_path( 'news' ) ); ?>">News</a></li>
             <li class=""><a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>">Contact</a></li>
