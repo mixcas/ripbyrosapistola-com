@@ -57,9 +57,8 @@ if( have_posts() ) {
 <?php
 } ?>
 
-        </div>
-      </div>
     </div>
+    <?php get_template_part('partials/pagination'); ?>
   </section>
 
 </main>

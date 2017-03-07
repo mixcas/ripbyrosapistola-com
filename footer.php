@@ -1,7 +1,7 @@
   <footer id="footer" class="bg-black white-text margin-top-basic">
     <div class="grid-row container margin-top-basic margin-bottom-basic">
       <div class="grid-item item-s-4">
-        <h4>Find us</h4>
+        <h4 class="margin-bottom-tiny">Find us</h4>
         <p>Lisboa #48, Colonia Juárez, México D.F.</p>
 
         <p>Tel: +52 (55) 5264 8248</p>
@@ -17,10 +17,10 @@
         <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?>
       </div>
       <div class="grid-item item-s-4">
-        <h4>Follow us</h4>
-        <a href="https://www.facebook.com/Ripbyrosapistola" target="_blank" rel="noopener">facebook.com/Ripbyrosapistola</a>
-        <a href="https://www.instagram.com/rosapistola/" target="_blank" rel="noopener">instagram.com/rosapistola/</a>
-        <a href="https://twitter.com/rosapistola" target="_blank" rel="noopener">twitter.com/rosapistola</a>
+        <h4 class="margin-bottom-tiny">Follow us</h4>
+        <p><a href="https://www.facebook.com/Ripbyrosapistola" target="_blank" rel="noopener">facebook.com/Ripbyrosapistola</a></p>
+        <p><a href="https://www.instagram.com/rosapistola/" target="_blank" rel="noopener">instagram.com/rosapistola/</a></p>
+        <p><a href="https://twitter.com/rosapistola" target="_blank" rel="noopener">twitter.com/rosapistola</a></p>
       </div>
     </div>
     <p class="text-align-center">R†P by Rosa Pistola · Copyright © 2017 · All Rights Reserved</p>
