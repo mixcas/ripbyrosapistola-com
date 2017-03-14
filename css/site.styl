@@ -38,6 +38,9 @@ $color-black = rgb(0, 0, 0)
 $color-white = rgb(255, 255, 255)
 $color-purple = #935386
 
+$color-facebook = rgb(59, 89, 152)
+$color-twitter = rgb(0, 132, 180)
+
 // ******************************************************
 
 // BASIC
@@ -67,6 +70,13 @@ font-size-h1,  font-size-h2, font-size-h3, font-size-h4
 .bg-black-alpha
   background: alpha($color-black, .7)
 
+.background-color-twitter
+  background-color: $color-twitter
+
+.background-color-facebook
+  background-color: $color-facebook
+
+
 .white-text
   color: $color-white
 
@@ -75,6 +85,14 @@ font-size-h1,  font-size-h2, font-size-h3, font-size-h4
 
 .big-text
   font-size: 64px
+
+.share-button
+  display: inline-block
+  width: 100%
+
+  svg
+    fill: $color-white
+    height: 20px
 
 // ******************************************************
 

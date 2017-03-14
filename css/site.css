@@ -895,6 +895,12 @@ font-size-h4 {
 .bg-black-alpha {
   background: rgba(0,0,0,0.7);
 }
+.background-color-twitter {
+  background-color: #0084b4;
+}
+.background-color-facebook {
+  background-color: #3b5998;
+}
 .white-text {
   color: #fff;
 }
@@ -905,6 +911,14 @@ font-size-h4 {
 }
 .big-text {
   font-size: 64px;
+}
+.share-button {
+  display: inline-block;
+  width: 100%;
+}
+.share-button svg {
+  fill: #fff;
+  height: 20px;
 }
 .container {
   width: 96%;
