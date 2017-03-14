@@ -22,13 +22,13 @@ if( have_posts() ) {
       </div>
 
       <div class="container">
-        <div class="grid-row">
-          <div class="grid-item item-s-10">
+        <div class="grid-row justify-center">
+          <div class="grid-item item-s-10 text-align-center">
             <h1 class="big-text"><?php the_title(); ?></h1>
           </div>
         </div>
 
-        <div class="grid-row margin-bottom-small">
+        <div class="grid-row margin-bottom-small justify-center">
           <div class="grid-item item-s-3">
             <a class="background-color-facebook share-button justify-center padding-top-tiny padding-bottom-tiny text-align-center" href="#" onclick="Site.Share.onFB()">
               <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/facebook_share.svg'); ?>
@@ -41,8 +41,8 @@ if( have_posts() ) {
           </div>
         </div>
 
-        <div class="grid-row">
-          <div class="grid-item item-s-12 content-copy">
+        <div class="grid-row justify-center">
+          <div class="grid-item item-s-10 content-copy">
 
           <?php the_content(); ?>
           <p><b><?php the_date('F d, Y') ?></b></p>
@@ -50,14 +50,14 @@ if( have_posts() ) {
           </div>
         </div>
 
-        <div class="grid-row">
+        <div class="grid-row justify-center">
           <div class="grid-item item-s-3">
-            <a class="background-color-facebook share-button justify-center padding-top-tiny padding-bottom-tiny text-align-center" href="#" onclick="Site.Share.onFB()">
+            <a class="background-color-facebook share-button padding-top-tiny padding-bottom-tiny text-align-center" href="#" onclick="Site.Share.onFB()">
               <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/facebook_share.svg'); ?>
             </a>
           </div>
           <div class="grid-item item-s-3">
-            <a class="background-color-twitter share-button justify-center padding-top-tiny padding-bottom-tiny text-align-center" href="#" onclick="Site.Share.onTW()">
+            <a class="background-color-twitter share-button padding-top-tiny padding-bottom-tiny text-align-center" href="#" onclick="Site.Share.onTW()">
               <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/twitter_share.svg'); ?>
             </a>
           </div>
