@@ -1,4 +1,4 @@
-  <footer id="footer" class="bg-black white-text margin-top-basic">
+  <footer id="footer" class="bg-black white-text margin-top-basic padding-top-small padding-bottom-small">
     <div class="grid-row container margin-top-basic margin-bottom-basic">
       <div class="grid-item item-s-4">
         <h4 class="margin-bottom-tiny">Find us</h4>
@@ -13,7 +13,7 @@
 
         <p>rosapistola@gmail.com</p>
       </div>
-      <div class="grid-item item-s-4">
+      <div id="footer-logo" class="grid-item item-s-4">
         <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?>
       </div>
       <div class="grid-item item-s-4">
