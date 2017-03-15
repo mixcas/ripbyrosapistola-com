@@ -23,7 +23,7 @@ if( have_posts() ) {
 
       <div class="container">
         <div class="grid-row justify-center">
-          <div class="grid-item item-s-10 text-align-center">
+          <div class="grid-item item-s-12 item-l-10 text-align-center">
             <h1 class="big-text"><?php the_title(); ?></h1>
           </div>
         </div>
@@ -42,7 +42,7 @@ if( have_posts() ) {
         </div>
 
         <div class="grid-row justify-center">
-          <div class="grid-item item-s-10 content-copy">
+          <div class="grid-item item-s-12 item-m-10 content-copy">
 
           <?php the_content(); ?>
           <p><b><?php the_date('F d, Y') ?></b></p>
