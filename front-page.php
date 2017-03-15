@@ -52,12 +52,12 @@ if( $latest_posts->have_posts() ) {
     <?php
     if ($index % 3 === 0) { // OPEN ROW
     ?>
-      <div class="grid-row margin-bottom-basic">
+      <div class="grid-row">
       <?php
       }
       ?>
 
-        <article <?php post_class('grid-item item-s-4'); ?> id="post-<?php the_ID(); ?>">
+        <article <?php post_class('grid-item item-s-12 item-l-4 margin-bottom-small'); ?> id="post-<?php the_ID(); ?>">
           <div class="grid-post text-align-center">
             <a href="<?php the_permalink() ?>">
               <div class="background-image" style="background-image: url(<?php echo the_post_thumbnail_url('background-image-grid'); ?>);"></div>
@@ -95,10 +95,10 @@ if( $latest_posts->have_posts() ) {
   ));
 
 
-  if (!empty($featured_products)) {
+  if ($featured_products->have_posts()) {
 ?>
   <section id="featured-products" class="container">
-    <div class="grid-row margin-bottom-basic">
+    <div class="grid-row">
       <div class="grid-item item-s-12 text-align-center margin-top-small margin-bottom-small">
         <h1>Featured Products</h1>
       </div>
@@ -117,7 +117,7 @@ if( $latest_posts->have_posts() ) {
       }
       ?>
 
-        <article <?php post_class('grid-item item-s-4'); ?> id="post-<?php the_ID(); ?>">
+        <article <?php post_class('grid-item item-s-12 item-l-4 margin-bottom-small'); ?> id="post-<?php the_ID(); ?>">
           <div class="grid-post text-align-center">
             <a href="<?php the_permalink() ?>">
               <div class="background-image" style="background-image: url(<?php echo background_image_set_css(get_post_thumbnail_id( $featured_products->post->ID )); ?>);"></div>
@@ -137,10 +137,6 @@ if( $latest_posts->have_posts() ) {
 
 <?php
   }
-} else {
-?>
-        <article class="u-alert grid-item item-s-12"><?php _e('Sorry, no posts matched your criteria :{'); ?></article>
-<?php
 } ?>
   </section>
 
