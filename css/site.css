@@ -1280,6 +1280,7 @@ img {
 }
 #footer svg {
   fill: #fff;
+  width: 100%;
 }
 @media screen and (min-width: 720px) {
   .margin-micro {
