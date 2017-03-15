@@ -15,9 +15,6 @@ if( have_posts() ) {
     </div>
     <div class="container posts-grid">
 <?php
-  the_post();
-?>
-<?php
   $index = -1;
   while( have_posts() ) {
     the_post();
@@ -41,7 +38,7 @@ if( have_posts() ) {
         </article>
 
       <?php
-      if ($index % 3 === 2 || have_posts() === false) { // CLOSE ROW
+      if ($index % 3 === 2 || ($wp_query->current_post + 1) == $wp_query->post_count) { // CLOSE ROW
       ?>
       </div>
       <?php
