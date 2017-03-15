@@ -23,12 +23,12 @@ if( have_posts() ) {
     <?php
     if ($index % 3 === 0) { // OPEN ROW
     ?>
-      <div class="grid-row margin-bottom-small">
+      <div class="grid-row">
       <?php
       }
       ?>
 
-        <article <?php post_class('grid-item item-s-4'); ?> id="post-<?php the_ID(); ?>">
+        <article <?php post_class('grid-item item-s-12 item-l-4 margin-bottom-tiny'); ?> id="post-<?php the_ID(); ?>">
           <div class="grid-post text-align-center">
             <a href="<?php the_permalink() ?>">
               <div class="background-image" style="background-image: url(<?php echo the_post_thumbnail_url('background-image-grid'); ?>);"></div>
