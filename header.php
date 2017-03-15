@@ -30,22 +30,22 @@ get_template_part('partials/seo');
 <section id="main-container" class="grid-column justify-between">
 
   <header id="header" class="bg-black white-text">
-    <div class="desktop-only desktop-header">
+    <div class="desktop-header">
       <div class="grid-row container">
         <div class="grid-item item-s-2 logo">
           <h1 class="u-hidden"><?php bloginfo('name'); ?></h1>
           <a class="u-inline-block margin-top-tiny margin-bottom-tiny" href="<?php echo home_url(); ?>"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?></a>
         </div>
-        <div class="grid-item item-s-2 padding-top-small padding-bottom-tiny"><a class="shop-link padding-tiny" href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></div>
-        <div class="grid-item item-s-2 padding-top-small padding-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'news' ) ); ?>">News</a></div>
-        <div class="grid-item item-s-2 padding-top-small padding-bottom-tiny"><a href="<?php echo get_category_link_by_slug('lookbook'); ?>">Lookbooks</a></div>
-        <div class="grid-item item-s-2 padding-top-small padding-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></div>
-        <div class="grid-item item-s-2 padding-top-small padding-bottom-tiny"><?php get_template_part('partials/cart'); ?></div>
+        <div class="grid-item item-s-2 margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><a class="shop-link padding-tiny" href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></div>
+        <div class="grid-item item-s-2 margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'news' ) ); ?>">News</a></div>
+        <div class="grid-item item-s-2 margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><a href="<?php echo get_category_link_by_slug('lookbook'); ?>">Lookbooks</a></div>
+        <div class="grid-item item-s-2 margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></div>
+        <div class="grid-item item-s-2 margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><?php get_template_part('partials/cart'); ?></div>
       </div>
     </div>
     <div class="container mobile-only mobile-header">
       <div class="grid-row">
-        <div class="grid-item item-s-12 text-align-center">
+        <div class="grid-item item-s-12 padding-top-small padding-bottom-small text-align-center">
           <a href="#" class="menu-toggle logo"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?></a>
         </div>
 

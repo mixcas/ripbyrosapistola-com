@@ -1236,6 +1236,9 @@ body.mobile-menu {
 #main-container {
   min-height: 100vh;
 }
+.desktop-header {
+  display: none;
+}
 #mobile-menu {
   position: fixed;
   top: 0;
@@ -1261,6 +1264,7 @@ body.mobile-menu {
 .logo svg {
   width: auto;
   height: 50px;
+  fill: #fff;
 }
 .background-image {
   width: 100%;
@@ -1585,6 +1589,9 @@ img {
     height: auto;
     fill: #fff;
   }
+  .desktop-header {
+    display: block;
+  }
   .grid-post {
     position: relative;
   }
@@ -1600,7 +1607,7 @@ img {
     margin-bottom: 21px;
     line-height: 2;
   }
-  a.shop-link {
+  .shop-link {
     background: #935386;
     border-radius: 6px;
   }
