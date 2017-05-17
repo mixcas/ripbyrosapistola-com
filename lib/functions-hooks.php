@@ -7,3 +7,8 @@ function wcs_woo_remove_reviews_tab($tabs) {
   unset($tabs['reviews']);
   return $tabs;
 }
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+  add_theme_support( 'woocommerce' );
+}
