@@ -53,22 +53,24 @@ get_template_part('partials/seo');
         </div>
 
         <div id="mobile-menu" class="white-text bg-black">
-          <ul class="">
-            <li class=""><a href="<?php echo home_url(); ?>">Home</a></li>
-            <li class=""><a href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></li>
-            <li class=""><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></li>
-            <li class=""><a href="#">Lookbooks</a></li>
-            <li class=""><a href="<?php echo get_permalink( get_page_by_path( 'news' ) ); ?>">News</a></li>
-            <li class=""><a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>">Contact</a></li>
+          <ul class="mobile-menu-links grid-column justify-center align-items-center">
+            <li class="margin-top-tiny margin-bottom-tiny"><a href="<?php echo home_url(); ?>">Home</a></li>
+            <li class="margin-top-tiny margin-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></li>
+            <li class="margin-top-tiny margin-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></li>
+            <li class="margin-top-tiny margin-bottom-tiny"><a href="#">Lookbooks</a></li>
+            <li class="margin-top-tiny margin-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'news' ) ); ?>">News</a></li>
+            <li class="margin-top-tiny margin-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>">Contact</a></li>
           </ul>
-          <div class="">
+<?php /*
             <ul class="social-menu">
               <li class=""><a href="#">Facebook</a></li>
               <li class=""><a href="#">Twitter</a></li>
               <li class=""><a href="#">Instagram</a></li>
             </ul>
-          </div>
-          <a href="#" class="menu-toggle">X</a>
+ */ ?>
+          <a href="#" class="menu-toggle">
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTUwNS45NDMsNi4wNThjLTguMDc3LTguMDc3LTIxLjE3Mi04LjA3Ny0yOS4yNDksMEw2LjA1OCw0NzYuNjkzYy04LjA3Nyw4LjA3Ny04LjA3NywyMS4xNzIsMCwyOS4yNDkgICAgQzEwLjA5Niw1MDkuOTgyLDE1LjM5LDUxMiwyMC42ODMsNTEyYzUuMjkzLDAsMTAuNTg2LTIuMDE5LDE0LjYyNS02LjA1OUw1MDUuOTQzLDM1LjMwNiAgICBDNTE0LjAxOSwyNy4yMyw1MTQuMDE5LDE0LjEzNSw1MDUuOTQzLDYuMDU4eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTUwNS45NDIsNDc2LjY5NEwzNS4zMDYsNi4wNTljLTguMDc2LTguMDc3LTIxLjE3Mi04LjA3Ny0yOS4yNDgsMGMtOC4wNzcsOC4wNzYtOC4wNzcsMjEuMTcxLDAsMjkuMjQ4bDQ3MC42MzYsNDcwLjYzNiAgICBjNC4wMzgsNC4wMzksOS4zMzIsNi4wNTgsMTQuNjI1LDYuMDU4YzUuMjkzLDAsMTAuNTg3LTIuMDE5LDE0LjYyNC02LjA1N0M1MTQuMDE4LDQ5Ny44NjYsNTE0LjAxOCw0ODQuNzcxLDUwNS45NDIsNDc2LjY5NHoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+          </a>
         </div>
 
       </div>

@@ -1240,6 +1240,7 @@ body.mobile-menu {
   display: none;
 }
 #mobile-menu {
+  font-size: 1.8rem;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -1255,6 +1256,14 @@ body.mobile-menu {
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
+}
+#mobile-menu .menu-toggle {
+  position: absolute;
+  bottom: 7px;
+  right: 14px;
+}
+.mobile-menu-links {
+  height: 100%;
 }
 #main-content {
   -webkit-flex: 1 1 auto;
