@@ -1261,6 +1261,9 @@ body.mobile-menu {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
+svg {
+  max-width: 100%;
+}
 .logo svg {
   width: auto;
   height: 50px;
