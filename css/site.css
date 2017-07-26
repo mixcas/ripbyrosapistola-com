@@ -1239,6 +1239,10 @@ body.mobile-menu {
 .desktop-header {
   display: none;
 }
+.mobile-header {
+  background: #000;
+  z-index: 10;
+}
 #mobile-menu {
   font-size: 1.8rem;
   position: fixed;
@@ -1251,6 +1255,7 @@ body.mobile-menu {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  z-index: 100;
 }
 #mobile-menu.active {
   -webkit-transform: translateY(0);
@@ -1283,6 +1288,16 @@ svg {
   height: 30px;
   fill: #fff;
 }
+.shopping-cart-icon {
+  display: block;
+}
+.shopping-cart-icon svg {
+  width: 30px;
+  fill: #935386;
+}
+.shopping-cart-icon span {
+  font-size: 0.8em;
+}
 .background-image {
   width: 100%;
   height: 100%;
@@ -1313,6 +1328,13 @@ img {
 #footer-logo svg {
   fill: #fff;
   width: 100%;
+}
+.cart input,
+.cart select {
+  background: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #000;
 }
 .single-product .sku_wrapper {
   display: none;
@@ -1631,16 +1653,6 @@ img {
     background: #935386;
     border-radius: 6px;
   }
-  .shopping-cart-icon {
-    display: block;
-  }
-  .shopping-cart-icon svg {
-    width: 17px;
-    fill: #935386;
-  }
-  .shopping-cart-icon span {
-    font-size: 0.8em;
-  }
 }
 @media screen and (min-width: 1024px) {
   .container {
@@ -1954,6 +1966,12 @@ img {
   }
   .posts-grid .background-image {
     height: 274px;
+  }
+  .shopping-cart-icon svg {
+    width: 17px;
+  }
+  .shopping-cart-icon span {
+    font-size: 0.8em;
   }
 }
 @media screen and (min-width: 1280px) {
