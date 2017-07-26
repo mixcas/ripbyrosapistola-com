@@ -46,7 +46,7 @@ get_template_part('partials/seo');
     <div class="container mobile-only mobile-header">
       <div class="grid-row padding-top-tiny padding-bottom-tiny">
         <div class="grid-item item-s-3 text-align-center">
-          <a href="#" class="menu-toggle logo"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?></a>
+          <a href="<?php echo home_url(); ?>" class="logo"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?></a>
         </div>
         <div class="grid-item item-s-3 offset-s-4 margin-top-small"><?php get_template_part('partials/cart'); ?></div>
         <div class="grid-item item-s-2 padding-top-small text-align-center">

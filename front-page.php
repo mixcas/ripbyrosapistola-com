@@ -16,7 +16,10 @@ if( $latest_posts->have_posts() ) {
     <article class="featured-post margin-bottom-basic">
       <div class="image-header">
         <div class="mobile-only">
-          <?php the_post_thumbnail('background-image'); ?>
+          <a href="<?php the_permalink(); ?>">
+            <?php the_post_thumbnail('background-image'); ?>
+          </a>
+          <h2 class="mobile-image-header-title white-text font-size-h1 text-align-center"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         </div>
         <div class="desktop-only">
           <a href="<?php the_permalink(); ?>">
