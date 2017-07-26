@@ -1264,7 +1264,7 @@ body.mobile-menu {
 }
 #mobile-menu .menu-toggle {
   position: absolute;
-  bottom: 7px;
+  top: 14px;
   right: 14px;
 }
 .mobile-menu-links {
