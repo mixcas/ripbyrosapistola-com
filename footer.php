@@ -2,16 +2,12 @@
     <div class="grid-row container margin-top-basic margin-bottom-basic">
       <div class="grid-item item-s-12 item-l-4">
         <h4 class="margin-bottom-tiny">Find us</h4>
-        <p>Lisboa #48, Colonia Juárez, México D.F.</p>
+<?php
+$find_us = IGV_get_option('_igv_site_options', '_igv_find_us');
 
-        <p>Tel: +52 (55) 5264 8248</p>
+echo apply_filters('the_content', $find_us);
 
-        <p>Hours<br/>
-        Thur - Fri 1:00pm a 8:00pm<br/>
-        Sat - Sun 1:00pm a 5:00pm
-        </p>
-
-        <p>rosapistola@gmail.com</p>
+?>
       </div>
       <div id="footer-logo" class="grid-item item-s-12 item-l-4">
         <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?>
