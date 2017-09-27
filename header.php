@@ -36,11 +36,14 @@ get_template_part('partials/seo');
           <h1 class="u-hidden"><?php bloginfo('name'); ?></h1>
           <a class="u-inline-block margin-top-tiny margin-bottom-tiny" href="<?php echo home_url(); ?>"><?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/dist/rip_logo.svg'); ?></a>
         </div>
-        <div class="grid-item item-s-2 margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><a class="shop-link padding-tiny" href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></div>
-        <div class="grid-item item-s-2 margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'news' ) ); ?>">News</a></div>
-        <div class="grid-item item-s-2 margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><a href="<?php echo get_category_link_by_slug('lookbook'); ?>">Lookbooks</a></div>
-        <div class="grid-item item-s-2 margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></div>
-        <div class="grid-item item-s-2 margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><?php get_template_part('partials/cart'); ?></div>
+        <div class="grid-item item-s-10 grid-row">
+          <div class="grid-item flex-grow no-gutter margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><a class="shop-link padding-tiny" href="<?php echo get_permalink( get_page_by_path( 'shop' ) ); ?>">Shop</a></div>
+          <div class="grid-item flex-grow no-gutter margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'news' ) ); ?>">News</a></div>
+          <div class="grid-item flex-grow no-gutter margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><a href="<?php echo get_category_link_by_slug('lookbook'); ?>">Lookbooks</a></div>
+          <div class="grid-item flex-grow no-gutter margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>">About</a></div>
+          <div class="grid-item flex-grow no-gutter margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'faq' ) ); ?>">FAQ</a></div>
+          <div class="grid-item flex-grow no-gutter margin-top-tiny margin-bottom-tiny padding-top-tiny padding-bottom-tiny"><?php get_template_part('partials/cart'); ?></div>
+        </div>
       </div>
     </div>
     <div class="container mobile-only mobile-header">
@@ -61,6 +64,7 @@ get_template_part('partials/seo');
             <li class="margin-top-tiny margin-bottom-tiny"><a href="#">Lookbooks</a></li>
             <li class="margin-top-tiny margin-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'news' ) ); ?>">News</a></li>
             <li class="margin-top-tiny margin-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>">Contact</a></li>
+            <li class="margin-top-tiny margin-bottom-tiny"><a href="<?php echo get_permalink( get_page_by_path( 'faq' ) ); ?>">FAQ</a></li>
           </ul>
 <?php /*
             <ul class="social-menu">
