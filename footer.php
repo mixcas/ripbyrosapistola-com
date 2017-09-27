@@ -1,7 +1,6 @@
   <footer id="footer" class="bg-black white-text margin-top-basic padding-top-small padding-bottom-small">
     <div class="grid-row container margin-top-basic margin-bottom-basic">
       <div class="grid-item item-s-12 item-l-4">
-        <h4 class="margin-bottom-tiny">Find us</h4>
 <?php
 $find_us = IGV_get_option('_igv_site_options', '_igv_find_us');
 
