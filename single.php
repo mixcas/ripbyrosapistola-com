@@ -42,7 +42,7 @@ if( have_posts() ) {
         </div>
 
         <div class="grid-row justify-center">
-          <div class="grid-item item-s-12 item-m-8 item-l-6 content-copy">
+        <div class="grid-item item-s-12 item-m-8 <?php echo in_category('lookbook') ? '' : 'item-l-6'; ?> content-copy">
 
           <?php the_content(); ?>
           <p><b><?php the_date('F d, Y') ?></b></p>

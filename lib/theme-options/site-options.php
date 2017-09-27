@@ -81,17 +81,21 @@ $metabox = array(
     // BOILER
 
     array(
-      'name' => __( 'Title for options section', 'cmb2' ),
+      'name' => __( 'Footer Options', 'cmb2' ),
       'desc' => __( '', 'cmb2' ),
-      'id'   => $prefix . 'general_title',
+      'id'   => $prefix . 'footer_options_title',
       'type' => 'title',
     ),
     array(
-      'name' => __( 'Test Text', 'IGV' ),
-      'desc' => __( 'field description (optional)', 'IGV' ),
-      'id'   => $prefix . 'test_text',
-      'type' => 'text',
-      'default' => 'Default Text',
+      'name' => __( 'Find us', 'IGV' ),
+      'desc' => __( '', 'IGV' ),
+      'id'   => $prefix . 'find_us',
+      'type' => 'wysiwyg',
+      'options' => array(
+        'media_buttons' => edit, // show insert/upload button(s)
+        'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
+        'teeny' => true, // output the minimal editor config used in Press This
+      ),
     ),
     array(
       'name'    => __( 'Test Color Picker', 'IGV' ),
