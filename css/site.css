@@ -1344,6 +1344,12 @@ img {
   border: none;
   border-bottom: 1px solid #000;
 }
+.product-categories {
+  margin: 1em 0;
+}
+.current-cat {
+  color: #935386;
+}
 .single-product .sku_wrapper {
   display: none;
 }
